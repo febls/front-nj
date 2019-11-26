@@ -49,7 +49,8 @@
                           </v-card>                           
                         </v-tab-item>
                         </v-tabs>
-                      <br>        
+                      <br> 
+                      <v-btn to="/solicitar-pedido" class="bt-m-area">Publicar um job!</v-btn>       
     </v-flex>
   </v-layout>
 </v-container>
@@ -100,4 +101,8 @@
       text: 'Lorem ipsum dolor sit amet'
     })
   }
+
+  const routes = [
+  { path: '/solicitar-pedido' }
+  ];
 </script>

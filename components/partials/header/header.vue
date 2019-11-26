@@ -10,17 +10,19 @@
                         <nav>
                             <ul class="link-list">
                                 <li>
-                                    <nuxt-link :to="{ path: '/',hash:'#como-participar'}" v-scroll-to="'#como-participar'" >
-                                        Como funciona   
-                                    </nuxt-link>
-                                </li>
-                                <li>
-                                    <nuxt-link :to="{ path: '/', hash:'#premios'}" v-scroll-to="'#premios'" >
+                                    
+                                    <nuxt-link :to="{ path: '/', hash:'#servicos'}" v-scroll-to="'#servicos'" >
                                         Serviços
                                     </nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="{ path: '/',hash:'#lojas'}" v-scroll-to="'#lojas'">
+                                    <nuxt-link :to="{ path: '/',hash:'#comoFunciona'}" v-scroll-to="'#comoFunciona'" >
+                                        Como funciona   
+                                    </nuxt-link>
+                                    
+                                </li>
+                                <li>
+                                    <nuxt-link :to="{ path: '/',hash:'#action'}" v-scroll-to="'#action'">
                                         Fale com a Job
                                     </nuxt-link>
                                 </li>

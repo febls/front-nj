@@ -93,7 +93,7 @@
             </v-date-picker>
         </v-menu>
 
-      <a href="/localizar">  <v-btn @click="click" style="border: 0; color: #FFF;border-radius: 60px;background-color: #451F55;width: 436px;height: 50px;font-size: 25px!important; text-transform: none;">Finalizar</v-btn></a>
+      <v-btn to="/localizar" style="border: 0; color: #FFF;border-radius: 60px;background-color: #451F55;width: 436px;height: 50px;font-size: 25px!important; text-transform: none;">Finalizar</v-btn>
         </form>
 </div>
 </v-layout>
@@ -114,6 +114,8 @@ export default {
     })
   }
 
-
+const routes = [
+  { path: '/localizar' }
+  ];
 
 </script>
