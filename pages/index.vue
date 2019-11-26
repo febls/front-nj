@@ -1,7 +1,7 @@
 <template>
 <div class="index-container">
 
-  <div id="entrada" style="    margin-top: 60px;">
+  <div id="entrada">
     <v-container>
       <v-layout align-center fill-height row wrap>
         
