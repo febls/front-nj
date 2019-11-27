@@ -16,7 +16,7 @@
                                     </nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="{ path: '/',hash:'#comoFunciona'}" v-scroll-to="'#comoFunciona'" >
+                                    <nuxt-link :to="{ path: '/',hash:'#linkC'}" v-scroll-to="'#linkC'" >
                                         Como funciona   
                                     </nuxt-link>
                                     

@@ -1,7 +1,7 @@
 <template>
 
 <v-container class="top-base">
-    <div>
+    <div class="login">
         <a href="/"><p>voltar</p></a>
     </div>
     <div>
