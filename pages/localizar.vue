@@ -8,27 +8,27 @@
         <div class="p-first">
             <div class="one-p">
                 <div class="one-left">
-                    <img src="/images/placeholder-p.png" width="130px" alt="">
+                    <img src="/images/charles.png" width="130px" alt="">
                 </div>
                 <div class="one-right">
-                   <ul class="l-ul">
-                       <li>User 01</li>
-                       <li>Rua 12346</li>
-                       <li>Eletricista, Reparos</li>
-                   </ul>
-                    <v-btn @click.stop="dialog = true" class="p-perfil">Escolher</v-btn>
-                    <v-btn class="p-escolher">Ver Perfil</v-btn>
-                    <v-btn class="p-escolher">Chat</v-btn>
+                  <p>{{ nomeUm }}</p>
+                  <p>{{ emailUm }}</p>
+                  <p>{{ ruaUm }}</p>
+
+                  <v-btn @click.stop="dialog = true" class="p-perfil">Escolher</v-btn>
+                  <v-btn class="p-escolher">Ver Perfil</v-btn>
+                  <v-btn class="p-escolher">Chat</v-btn>
                 </div>
             </div>
 
             <div class="two-p">
                  <div class="two-left">
-                    <img src="/images/placeholder-p.png" width="130px" alt="">
+                    <img src="/images/felipe.jpg" width="130px" alt="">
                 </div>
                 <div class="two-right">
-                    <p>Nome</p>
-                    <p>Titulo</p>
+                    <p>{{ nomeDois }}</p>
+                    <p>{{ emailDois }}</p>
+                    <p>{{ ruaDois }}</p>
                     <v-btn @click.stop="dialog = true" class="p-perfil">Escolher</v-btn>
                     <v-btn class="p-escolher">Ver Perfil</v-btn>
                     <v-btn class="p-escolher">Chat</v-btn>
@@ -84,8 +84,34 @@
   export default {
     data () {
       return {
-        dialog: false
+        dialog: false,
+        nomeUm: '',
+        nomeDois: '',
+        emailUm: '',
+        emailDois: '',
+        ruaUm: '',
+        ruaDois: ''
       }
+    },
+
+    mounted(){
+      axios.get('http://api-nicejobs.herokuapp.com/getHired')
+      .then(dados => {
+          for(let i = 0; i < dados.data.length; i++){
+              if(i == 0){
+                  this.nomeUm = dados.data[i].nome;
+                  this.emailUm = dados.data[i].email;
+                  this.ruaUm = dados.data[i].endereco;
+              }else{
+                  this.nomeDois = dados.data[i].nome;
+                  this.emailDois = dados.data[i].email;
+                  this.ruaDois = dados.data[i].endereco;
+              }
+          }
+      })
+      .catch(error =>{
+          console.log("Houve um erro: ", error);
+      })
     }
   }
   </script>
