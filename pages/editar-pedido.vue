@@ -9,17 +9,17 @@
     <div id="pedido">
         <form style="display: table-caption;">
         <v-select
-        v-model="select"
+        v-model="servico"
         v-validate="'required'"
         :items="items"
-        label="Título"
+        label="Serviço"
         class="internal-form"
         data-vv-name="select"
         required
         ></v-select>
         
         <v-select
-        v-model="select"
+        v-model="local"
         v-validate="'required'"
         :items="items_2"
         label="Local"
@@ -31,7 +31,7 @@
         <v-subheader class="pl-0">Áreas:</v-subheader>
         <br>
             <v-slider
-            v-model="slider"
+            v-model="quantidadeAreas"
             :thumb-size="24"
             thumb-label="always"
             class="internal-form"
@@ -47,26 +47,21 @@
             ></v-textarea></div>
             <h2 class="internal-title">Endereço</h2> 
             <v-text-field 
-                v-model="nome"
+                v-model="cep"
                 class="internal-form"
                 label="CEP"
                 
             
             ></v-text-field>
             <v-text-field 
-                v-model="nome"
+                v-model="endereco"
                 class="internal-form"
                 label="Endereço"
-            ></v-text-field>
-            <v-text-field 
-                v-model="nome"
-                class="internal-form"
-                label="Agende uma data"
             ></v-text-field>
 
         <v-menu
             ref="menu"
-            v-model="menu"
+            v-model="data"
             :close-on-content-click="false"
             :nudge-right="40"
             :return-value.sync="date"
@@ -112,8 +107,19 @@ export default {
       date: new Date().toISOString().substr(0, 10),
       menu: false,
       modal: false,
-      menu2: false
-    })
+      menu2: false,
+      servico: '',
+      local: '',
+      quantidadeAreas: '',
+      descricao: '',
+      cep: '',
+      endereco: '',
+      data: ''
+    }),
+
+    mounted(){
+
+    }
   }
 
 const routes = [
