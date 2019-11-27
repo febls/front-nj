@@ -7,9 +7,9 @@
         
         <v-flex flex md7 xs12 offset-xs1>
           <img src="/images/nice-logo.png" width="120px" alt="logo nice job">
-          <h1 style="font-size:40px">A união faz a força, a Job une.</h1>
-          <v-btn to="/login" class="bt-home">Tenho um job!</v-btn>
-         <v-btn to="/login" class="bt-home-2">Quero um job!</v-btn>
+          <h1 style="font-size:40px">A união faz a força, a Job une.</h1><br>
+          <v-btn to="/login" class="bt-home">Contratar um serviço!</v-btn>
+         <v-btn to="/login" class="bt-home-2">Quero trabalhar com a Job!</v-btn>
         </v-flex>
         
         <v-flex md4 xs12>
@@ -26,29 +26,31 @@
       <br>
       <v-layout row wrap>
                     <v-flex md4 xs6>
-                        <v-btn  class="btn-outlined" style="margin-left: -30px;">Limpeza</v-btn>
+                        <v-btn  to="/solicitar-pedido" class="btn-outlined" style="margin-left: -30px;">Limpeza</v-btn>
                     </v-flex>
                     <v-flex md4 xs6>
-                        <v-btn style="margin-left: -17px;" class="btn-outlined" >Pintura</v-btn>
+                        <v-btn to="/solicitar-pedido" style="margin-left: -17px;" class="btn-outlined" >Pintura</v-btn>
                     </v-flex>
                     <v-flex md4 xs6>
-                        <v-btn style="margin-left: 0px;"  class="btn-outlined">Encanamento</v-btn>
+                        <v-btn to="/solicitar-pedido" style="margin-left: 0px;"  class="btn-outlined">Encanamento</v-btn>
                     </v-flex>
                     <v-flex md4 xs6>
-                        <v-btn class="btn-outlined" style="margin-left: -30px;">Eletricista</v-btn>
+                        <v-btn to="/solicitar-pedido" class="btn-outlined" style="margin-left: -30px;">Eletricista</v-btn>
                     </v-flex>
                     <v-flex md4 xs6>
-                        <v-btn style="margin-left: -17px;"  class="btn-outlined">Jardinagem</v-btn>
+                        <v-btn to="/solicitar-pedido" style="margin-left: -17px;"  class="btn-outlined">Jardinagem</v-btn>
                     </v-flex>
                     <v-flex md4 xs6>
-                        <v-btn style="margin-left: 0px;"  class="btn-outlined">Reparos</v-btn>
+                        <v-btn to="/solicitar-pedido"   style="margin-left: 0px;"  class="btn-outlined">Reparos</v-btn>
                     </v-flex>
                 </v-layout>
                 <br><br>
                 <center><p style="font-size: 20px; font-weight: 600;">Não encontrou o que procura? Fale com a gente!</p></center>
     </v-container>
-
+   
   </div>
+   <div id="linkC"></div>
+  
 
   <div id="comoFunciona">
     <v-container>
@@ -68,23 +70,15 @@
         </v-flex>
       </v-layout>
 
-      <div style="margin-top: 30px">
-        <img src="/images/fase.png" style="width: 1340px; margin-left:11px;" alt="">
+      <div class="index-fluxo">
+        <img src="/images/fase.png" style="width: 1190px; margin-left:11px;" alt="">
       </div>
-
-      <v-layout row wrap>
-          <v-flex xs4 px-0>
-            <p class="text-comoFunciona">Cadastre-se <br>ou faça seu login</p>
-          </v-flex>
-          
-          <v-flex md4 px-0>
-            <p class="text-comoFunciona">Encontre o serviço<br> que esta precisando</p>
-          </v-flex>
-        
-        <v-flex md2 offset-xs2>
-          <p class="text-comoFunciona">Escolha o profissional,<br> e feche o serviço com ele!</p>
-        </v-flex>
-      </v-layout>
+      <br>
+        <div class="index-cf"> 
+        <div class="cf-one">Cadastre-se <br>ou faça seu login</div>
+        <div class="cf-two">Encontre o serviço<br> que esta precisando</div>
+        <div class="cf-three">Escolha o profissional,<br> e feche o serviço com ele!</div>
+      </div>
       
     </v-container>
   </div>
@@ -93,7 +87,7 @@
             <v-container>
                 <h2 class="section-call">Oferece algum tipo de serviço? Entre para a Nice Job!  </h2>
                 <v-flex md12 xs12>
-                <center><button class="btn-action">Quero trabalhar com a Nice Job!</button></center>
+                <center><v-btn to="/cadastro-fornecedor" class="btn-action">Quero trabalhar com a Nice Job!</v-btn></center>
                  </v-flex>
                 <template>
                     <v-flex md12 xs12>

@@ -9,7 +9,7 @@
     <v-flex md4 xs12>
       <div class="m-left">
         <div class="m-dados">
-          <v-btn class="minha-area-btn">Meus Dados</v-btn>
+          <v-btn to="/meus-dados" class="minha-area-btn">Meus Dados</v-btn>
         </div>
         <div class="m-sair">
           <v-btn class="minha-area-btn">Sair</v-btn>

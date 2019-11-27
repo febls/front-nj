@@ -92,9 +92,10 @@
             <v-btn flat color="primary" @click="$refs.menu.save(date)">OK</v-btn>
             </v-date-picker>
         </v-menu>
-
+        <center>
         <v-btn to="/localizar" class="bt-editar-s">Alterar</v-btn>
-        <v-btn to="/localizar" class="bt-editar-p">Excluir</v-btn>    
+        <v-btn to="/localizar" class="bt-editar-p">Excluir</v-btn> 
+        </center>  
     </form>
 </div>
 </v-layout>

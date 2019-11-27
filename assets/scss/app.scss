@@ -82,7 +82,7 @@ ul {
 
 #comoFunciona {
   height: 600px;
-  margin-top: 51px;
+  margin-top: 85px;
 }
 
 .section-comoFunciona {
@@ -121,16 +121,16 @@ ul {
 }
 
 .btn-action {
-  border: 0px;
-  color: rgb(69, 31, 85);
-  border-radius: 60px;
-  background-color: rgb(255, 255, 255);
-  width: 550px;
-  height: 62px;
+  border: 0px !important;
+  color: rgb(69, 31, 85) !important;
+  border-radius: 60px !important;
+  background-color: rgb(255, 255, 255) !important;
+  width: 550px !important;
+  height: 62px !important;
   font-size: 27px !important;
-  text-transform: none;
-  margin-top: 39px;
-  font-weight: 500;
+  text-transform: none !important;
+  margin-top: 39px !important;
+  font-weight: 500 !important;
 }
 
 footer {
@@ -240,6 +240,11 @@ border-radius:3px !important !important;
   justify-content: center;
  
 }
+.l-first {
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
 .one-p{
   display: flex;
   border: 1px solid #451F55;
@@ -278,6 +283,15 @@ border-radius:3px !important !important;
   border-radius: 5px;
   margin-top: 15px;
 }
+.two-l {
+  display: flex;
+  border: 1px solid #451F55;
+  width: auto;
+  height: 151px;
+  padding: 11px 9px 10px;
+  border-radius: 5px;
+  
+}
 
 .two-left {
   margin: 0px 4px;
@@ -293,7 +307,7 @@ border-radius:3px !important !important;
 }
 
 .img-home {
-  width: 400px;
+  width: 380px;
   margin-top: 59px;
 
 }
@@ -304,17 +318,17 @@ border-radius:3px !important !important;
   border-radius: 60px !important;
   background-color: #451F55 !important;
   width: 323px;height: 62px !important;
-  font-size: 29px!important; 
+  font-size: 22px!important; 
   text-transform: none !important;
 }
 
 .bt-home-2 {
-  border: 0 !important; 
+  border: 2px solid #451F55 !important; 
   color: #451F55 !important;
   border-radius: 60px !important;
   background-color: #fff !important;
   width: 323px;height: 62px !important;
-  font-size: 29px!important; 
+  font-size: 19px!important; 
   text-transform: none !important;
 }
 
@@ -406,4 +420,34 @@ border-radius:3px !important !important;
   color: #451F55 !important;
 
   border: 1px solid #451f55;
+}
+
+.login {
+  margin-top: -100px !important;
+}
+
+.index-cf {
+  display: flex;
+  justify-content: space-between;
+}
+.cf-one {
+  text-align: center;
+  font-weight: 500;
+}
+
+.cf-two {
+  text-align: center;
+  margin-left: 70px;
+  font-weight: 500;
+}
+
+.cf-three {
+  text-align: center;
+  font-weight: 500;
+}
+
+.index-fluxo {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 }
