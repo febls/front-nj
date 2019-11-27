@@ -40,7 +40,7 @@
                   <li>Data: {{ pedidos.data }}</li>
                   <li>Contratante: {{ pedidos.nome }}</li>
               </ul>
-              <v-btn to="/editar-pedido" class="p-escolher">Editar</v-btn>
+              <v-btn to="/editar-pedido"  class="p-escolher">Editar</v-btn>
               <v-btn class="p-escolher">Chat</v-btn>
             </div> 
           </v-card-text>
