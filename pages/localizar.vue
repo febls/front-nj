@@ -11,10 +11,14 @@
                     <img src="/images/placeholder-p.png" width="130px" alt="">
                 </div>
                 <div class="one-right">
-                    <p>Nome</p>
-                    <p>Titulo</p>
-                    <v-btn class="p-perfil">Ver Perfil</v-btn>
-                    <v-btn class="p-escolher">Escolher</v-btn>
+                   <ul class="l-ul">
+                       <li>User 01</li>
+                       <li>Rua 12346</li>
+                       <li>Eletricista, Reparos</li>
+                   </ul>
+                    <v-btn class="p-perfil">Escolher</v-btn>
+                    <v-btn class="p-escolher">Ver Perfil</v-btn>
+                    <v-btn class="p-escolher">Chat</v-btn>
                 </div>
             </div>
 
@@ -25,11 +29,17 @@
                 <div class="two-right">
                     <p>Nome</p>
                     <p>Titulo</p>
-                    <v-btn class="p-perfil">Ver Perfil</v-btn>
-                    <v-btn class="p-escolher">Escolher</v-btn>
+                    <v-btn class="p-perfil">Escolher</v-btn>
+                    <v-btn class="p-escolher">Ver Perfil</v-btn>
+                    <v-btn class="p-escolher">Chat</v-btn>
+                    
                 </div>
             </div>
         </div>
+        <div class="l-forncedor">
+            <v-btn class="bt-lc">Ver todos fornecedores</v-btn>
+        </div>
+        
     </v-container>
 </div>
 </template>

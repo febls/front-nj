@@ -39,7 +39,17 @@
 
                         <v-tab-item>
                           <v-card flat>
-                            <v-card-text>Ativos</v-card-text>
+                            <v-card-text>
+                               <div class="m-area-s">
+                                <ul class="m-area-ul">
+                                    <li>Nome serviço</li>
+                                    <li>Data</li>
+                                    <li>Prestador: Fulano</li>
+                                </ul>
+                                <v-btn to="/editar-pedido" class="p-escolher">Editar</v-btn>
+                                <v-btn class="p-escolher">Chat</v-btn>
+                              </div>  
+                            </v-card-text>
                           </v-card>                           
                         </v-tab-item>
 

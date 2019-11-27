@@ -236,9 +236,9 @@ border-radius:3px !important !important;
 }
 
 .p-first {
-  display: flex;
+  display: grid;
   justify-content: center;
-  justify-content: space-evenly;
+ 
 }
 .one-p{
   display: flex;
@@ -249,7 +249,7 @@ border-radius:3px !important !important;
   border-radius: 5px;
 }
 .one-left {
-  margin: 0px 4px;
+  margin: 0px 6px;
 }
 
 .p-perfil {
@@ -276,6 +276,7 @@ border-radius:3px !important !important;
   height: 151px;
   padding: 11px 9px 10px;
   border-radius: 5px;
+  margin-top: 15px;
 }
 
 .two-left {
@@ -333,5 +334,59 @@ border-radius:3px !important !important;
 }
 
 .c-minha-area {
-  margin-top: -1px !important;
+  margin-top: -1px !important
+  ;
+}
+
+.m-area-s {
+  border: 1px solid;
+  width: 259px;
+  height: 115px;
+  padding: 1px 7px 3px;
+  border-radius: 4px;
+}
+
+.m-area-ul {
+  padding: 1px 4px 4px !important;
+}
+
+.bt-editar-p {
+  border: 0px !important;
+  color: rgb(69, 31, 85) !important;
+  border-radius: 60px !important;
+  background-color: rgb(255, 255, 255) !important;
+  width: 200px !important;
+  height: 38px !important;
+  font-size: 22px !important;
+  text-transform: none !important;
+  border: 1px solid !important;
+}
+
+.bt-editar-s {
+  border: 0px !important;
+  color: rgb(255, 255, 255) !important;
+  border-radius: 60px !important;
+  background-color: rgb(69, 31, 85) !important;
+  width: 200px !important;
+  height: 38px !important;
+  font-size: 22px !important;
+  text-transform: none !important;
+}
+
+.l-ul {
+  padding: 1px 2px 3px !important;
+}
+
+.l-forncedor {
+  display: flex;
+  justify-content: center;
+  padding: 42px 6px 40px;
+}
+
+.bt-lc {
+  background-color: #fff !important;
+  border: 2px solid rgb(69, 31, 85) !important;
+  border-radius: 19px !important;
+  text-transform: none !important;
+  font-size: 18px !important;
 }
